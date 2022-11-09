@@ -1,0 +1,179 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: rubik,Sans-serif;
+}
+
+header{
+    padding: 15px 0;
+    color: white;
+    text-align: center;
+    background-color: rgb(252,13,27);
+    font-size: 13px;
+}
+
+figure.desktop {
+    display: none;
+}
+
+header img{
+    vertical-align: -1px;
+    width: 100%;
+    max-width: 13px;
+}
+
+.info-botao{
+    display: none;
+}
+
+.container{
+    padding: 10px 2%;
+}
+
+.info-produto h2{
+    color: #BA1919;
+    font-size: 29px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.info-produto{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+figure { width: 100%; min-width: 320px; margin:0 auto;}
+video {
+    width: 100%;
+    height: auto;
+}
+
+.video-produto{
+    position: relative;
+    padding-bottom: 56.25%; 
+    padding-top: 25px;
+    height: 0;
+    margin:0 auto;
+}
+
+.video-produto video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.botao-zap{
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+    padding: 12px 24px;
+    background-color: #0D9C00;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0px 0px 18px 1px #0D9C00;
+}
+
+.botao-zap a,
+.botao-zap i{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+.beneficios{
+    margin-top: 35px;
+}
+
+.beneficio-single{
+    margin: 2px 0;
+}
+
+.beneficio-single p{
+    font-size: 12px;
+}
+
+.beneficio-single i{
+    position: relative;
+    top: -1px;
+    color: #0d8202;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+footer{
+    margin-top: 95px;
+    text-align: center;
+    font-size: 10px;
+}
+
+footer p{
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width : 720px){
+
+
+
+    .info-produto-wraper{
+        width: 51%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header{
+        padding: 5px 0;
+        color: white;
+        text-align: center;
+        background-color: rgb(252,13,27);
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    header img{
+        vertical-align: -1px;
+        width: 100%;
+        max-width: 26px;
+    }
+
+    figure.mobile {
+        display: none;
+    }
+
+    figure.desktop {
+        height: auto;
+        width: 37%;
+        display: block;
+    }
+
+    .info-botao{
+        display: block;
+        order: 2;
+        color: #BA1919;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .botao-zap{
+        width: 100%;
+        margin: 15px 0;
+        order: 1;
+    }
+
+    .beneficios{
+        margin-top: 0;
+    }
+
+    .container{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1280px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+}
