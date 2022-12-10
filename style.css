@@ -117,7 +117,7 @@ video {
 
 .oferta-depoimentos{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     flex-wrap: nowrap;
 }
 
