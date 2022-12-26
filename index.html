@@ -16,8 +16,8 @@
     <meta name="robots" content="index,follow">
     <meta name="facebook-domain-verification" content="q61wf4miezxyihbbw8yk8wwpcy1z8f" />
 
-    <link rel="preload" href="style.css?v2" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="style.css?v2"></noscript>
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
 
     <link rel="preload" href="https://player-vz-0b28c8f7-70b.tv.pandavideo.com.br/embed/css/styles.css" as="style">
     <link rel="prerender" href="https://player-vz-0b28c8f7-70b.tv.pandavideo.com.br/embed/?v=8e026619-3cb0-493e-88e5-b97eba4fa002">
@@ -118,47 +118,6 @@
             </div><!--row-->
         </div><!--container-->
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper',{
-            loop: true,
-            effect: 'coverflow',
-            grabCursor: true,
-            pagination: {
-                el: '.swiper-pagination',
-            },
-        })
-    </script>
-
-    <script>
-    var divzona = document.getElementById("oferta-depoimentos")
-    var garantia = document.getElementById("garantia")
-    var flecha = document.getElementById("arrow")
-    const DELAY_TIME_IN_SECONDS = 137;
-    const DELAY_ELEMENTS_CLASS = 'delay';
-    
-    function showElements(className, value) {
-        for (const element of document.getElementsByClassName(className)) {
-            element.style.display = value;
-        }
-    }
-    
-    window.onload = () => {
-        showElements(DELAY_ELEMENTS_CLASS, 'none');
-        window.addEventListener("message", function(event) {
-          const data = event.data;
-          if (data.message == 'panda_timeupdate') {
-            if (data.currentTime >= DELAY_TIME_IN_SECONDS) {
-              showElements(DELAY_ELEMENTS_CLASS, 'block');
-              divzona.style.display = "flex"
-              divzona.style.flexDirection = "column"
-              flecha.style.backgroundColor = "rgb(179, 69, 118)"
-              garantia.style.display = "flex"
-            }
-          }
-        });
-    }
-    </script>
     <!--
     <script>
         var url_atual = window.location.href;
