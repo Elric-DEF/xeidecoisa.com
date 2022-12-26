@@ -23,7 +23,7 @@ video {
 /*Headline*/
 
 .headline{
-    font-size: 31px;
+    font-size: 26px;
     font-weight: 700;
     text-align: center;
     line-height: 1.2;
@@ -32,7 +32,6 @@ video {
 
 
 #header {
-    padding: 40px 0;
     background-color: #562139;
     text-transform: uppercase;
     text-align: center;
@@ -57,6 +56,7 @@ video {
 }
 
 .delay{
+    display: none;
 }
 
 .container {
@@ -82,8 +82,7 @@ video {
     transform: translateX(-50%);
     width: 100%;
     height: 30px;
-    /*background-color: #F3F3F3;*/
-    background-color: rgb(179, 69, 118);
+    background-color: #b34576;
 }
 
 .arrow-down {
@@ -96,182 +95,50 @@ video {
     z-index: 999;
 }
 
-/*OFERTA*/
-
-.depilattas-oferta{
-    display: flex;
+.cta{
+    padding: 15px 0;
+    background-color: #b34576;
 }
 
-.pote-item {
-    max-width: 416px;
-    width: 100%;
-}
-
-.depilattas-oferta .pote-item:nth-of-type(1){
-    margin-right: 10px;
-}
-
-.depilattas-oferta img{
-    max-width: 416px;
-    width: 100%;
-}
-
-.oferta-depoimentos{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
-div.oferta-hc{
-    background-color: rgb(179, 69, 118);
-    text-align: center;
-    padding: 75px 0 50px 0;
-}
-
-.headline-oferta h1{
-    font-size: 25px;
-    margin: 0 auto 20px auto;
-    font-weight: 700px;
-    text-transform: uppercase;
-    line-height: 1.4;
+/*
+.headline-cta h2{
+    color: white;
     font-weight: 900;
-    color: #ffffff;
+    font-size: 25px;
+    margin: 0 auto 20px;
 }
 
-.headline-oferta h2 {
+.headline-cta h3{
     font-size: 16px;
-    margin: 0 0 20px 0;
     text-align: center;
-    text-transform: uppercase;
-    line-height: 1.4;
+    margin: 0 0 20px;
     font-weight: 800;
     color: #1e1e4e;
 }
+*/
 
-.subheadline-oferta h1 {
-    font-size: 16px;
-    margin: 30px 0 20px 0;
-	color: #1e1e4e;
-    text-transform: uppercase;
-    font-weight: 700;
+.button-wpp a{
+    background-color: #00b30c;
+    box-shadow: 0 0 30px 0 #00b30c;
+    color:#fff;
+    border-radius:10px;
+    padding:20px 20px;
+    font-weight:800;
+    display:block;
+    width:fit-content;
+    text-align:center;
+    margin:2vh auto;
+    font-size:20px;
+    max-width:100%;
+    text-decoration:none;
+}
+
+.button-wpp p{
     text-align: center;
+    color: white;
+    font-size: 14px;
 }
 
-.headline-oferta{
-    margin-bottom: 30px;
-}
-
-.subheadline-oferta img{
-    width: 290px;
-}
-
-.semRelacaoFB{
-    padding: 40px 0 20px 0;
-    width: 100%;
-    background-color: rgb(78, 78, 78);
-    color: #ffffff;
-    text-align: center;
-}
-
-.semRelacaoFB p{
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-/*Depoimentos*/
-
-
-div.depoimentos{
-    padding-top: 65px;
-    background-color: #F3F3F3;
-    width: 100%;
-    position: relative;
-    height: 600px;
-    align-items: center;
-}
-
-.swiper {
-    text-align: center;
-    width: 100%;
-    max-width: 660px;
-    height: 500px;
-}
-
-.swiper-slide{
-    padding: 0 3%;
-    padding-top: 20px;
-    /*border: 2px solid rgb(13,61,166);*/
-}
-
-.testimonialBox .perfil{
-    text-align: center;
-    margin-top: 23px;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.imagem-pessoa{
-    text-align: center;
-    margin-bottom: 24px;
-}
-
-.imagem-pessoa img{
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: inline-block;
-}
-
-.img-depoimento{
-    max-width: 140px;
-}
-
-
-.testimonialBox .perfil .textos{
-    display: inline-block;
-    padding-left: 20px;
-}
-
-.testimonialBox .perfil p.nome{
-    display: block;
-    color: #562139;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.testimonialBox .perfil p.profissao{
-    display: block;
-    color: rgb(133, 51, 88);
-}
-
-div.swiper-pagination-bullet{
-    color: #000;
-}
-
-/*Garantia*/
-
-section.garantia{
-    height: auto;
-    padding: 20px 2%;
-    text-align: center;
-    background: rgb(17,80,217);
-    background: linear-gradient(180deg, rgb(173, 37, 98) 0%, rgb(141, 17, 73)100%);
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.garantia .texto-garantia{
-    padding-right: 15px;
-    text-align: center;
-    color: #ffffff;
-    font-size: 13px;
-}
-
-.garantia .imagem-garantia img{
-    max-width: 120px;
-}
 
 /* Rodapé */
 
@@ -325,17 +192,20 @@ section.garantia{
         height: 100px;
     }
 
-    .headline-oferta h1{
+    /*
+    .headline-cta h2{
+        text-align: center;
         font-size: 35px;
         margin: 0 auto 30px auto;
+        padding-top: 30px;
     }
 
-    .headline-oferta h2 {
+    .headline-cta h3 {
         font-size: 20px;
         margin: 0 auto 30px auto;
     }
 
-    .subheadline-oferta h1 {
+    .subheadline-cta h1 {
         font-size: 25px;
         margin: 50px auto;
     }
@@ -343,28 +213,5 @@ section.garantia{
     .img-depoimento{
         max-width: 100%;
     }
-
-    .depilattas-oferta{
-        justify-content: space-evenly;
-    }
-
-    .pote-item {
-        max-width: 311px;
-        width: 100%;
-    }
-
-    section.garantia{
-        padding: 0 280px;
-        height: 300px;
-    }
-
-    .garantia .texto-garantia{
-        text-align: left;
-        font-size: 16px;
-        padding-right: 30px;
-    }
-
-    .garantia .imagem-garantia img{
-        max-width: 395px;
-    }
+    */
 }
