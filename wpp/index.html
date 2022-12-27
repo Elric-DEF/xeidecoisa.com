@@ -86,10 +86,12 @@
 
     <section class="cta">
         <div class="container">
+            <!--
             <div class="headline-cta">
                 <h2>ESSA É A HORA DE VOCÊ AGIR, CONQUISTAR UMA PELE LISA E SOBRANCELHAS DEFINIDAS!</h2>
                 <h3>AMANHÃ VOCÊ JÁ PODERÁ USAR O SEU DEPILATTA, APROVEITE A PROMOÇÃO DE LANÇAMENTO</h3>
-            </div><!--headline-cta-->
+            </div>
+            --><!--headline-cta-->
             <div class="button-wpp">
                 <a href="">Eu quero saber o valor do Depilatta</a>
                 <p>Fale com um dos atendentes da Xeidecoisa e agende o seu pedido pra receber já amanhã</p>
@@ -116,47 +118,6 @@
             </div><!--row-->
         </div><!--container-->
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper',{
-            loop: true,
-            effect: 'coverflow',
-            grabCursor: true,
-            pagination: {
-                el: '.swiper-pagination',
-            },
-        })
-    </script>
-
-    <script>
-    var divzona = document.getElementById("oferta-depoimentos")
-    var garantia = document.getElementById("garantia")
-    var flecha = document.getElementById("arrow")
-    const DELAY_TIME_IN_SECONDS = 137;
-    const DELAY_ELEMENTS_CLASS = 'delay';
-    
-    function showElements(className, value) {
-        for (const element of document.getElementsByClassName(className)) {
-            element.style.display = value;
-        }
-    }
-    
-    window.onload = () => {
-        showElements(DELAY_ELEMENTS_CLASS, 'none');
-        window.addEventListener("message", function(event) {
-          const data = event.data;
-          if (data.message == 'panda_timeupdate') {
-            if (data.currentTime >= DELAY_TIME_IN_SECONDS) {
-              showElements(DELAY_ELEMENTS_CLASS, 'block');
-              divzona.style.display = "flex"
-              divzona.style.flexDirection = "column"
-              flecha.style.backgroundColor = "rgb(179, 69, 118)"
-              garantia.style.display = "flex"
-            }
-          }
-        });
-    }
-    </script>
     <!--
     <script>
         var url_atual = window.location.href;
