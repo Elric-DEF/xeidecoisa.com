@@ -16,8 +16,8 @@
     <meta name="robots" content="index,follow">
     <meta name="facebook-domain-verification" content="q61wf4miezxyihbbw8yk8wwpcy1z8f" />
 
-    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="style.css"></noscript>
+    <link rel="preload" href="style.css?3" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css?3"></noscript>
 
     <link rel="preload" href="https://player-vz-0b28c8f7-70b.tv.pandavideo.com.br/embed/css/styles.css" as="style">
     <link rel="prerender" href="https://player-vz-0b28c8f7-70b.tv.pandavideo.com.br/embed/?v=8e026619-3cb0-493e-88e5-b97eba4fa002">
@@ -83,17 +83,91 @@
             </div><!--container-->
         </div><!--header-stripes-bg-->
     </div><!--main-->
+    
+    
 
-    <section class="cta">
+    <!-- Oferta !-->
+    <div class="oferta-depoimentos" id="oferta-depoimentos" style="display: flex;">
+        <div class="oferta-hc delay" id="oferta-hc">
         <div class="container">
-            <div class="button-wpp">
-                <a href="">Eu quero saber o valor do Depilatta</a>
-                <p>Fale com um dos atendentes da Xeidecoisa e agende o seu pedido pra receber já amanhã</p>
-            </div><!--button-wpp-->
-        </div><!--container-->
-    </section><!--cta-->
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12 headline-oferta">
+                    <h1>Essa é a hora de você agir, conquistar uma pele lisa e sobrancelhas definidas!</h1>
+                    <h2>Amanhã você já poderá usar o seu depilatta, aproveite a promoção de lançamento</h2>
+                </div>
+            </div>
+                <div class="depilattas-oferta">
+                    <div class="pote-item">
+                        <a href="https://entrega.logzz.com.br/pay/?a=ZUWMOJ&s=459" class="cta-potes">
+                            <img height="100%" width="100%" src="imagens/1 Depilatta.png">
+                        </a>
+                    </div>
+                    <div class="pote-item">
+                        <a href="https://entrega.logzz.com.br/pay/?a=ZUWMOJ&s=861" class="cta-potes">
+                            <img height="100%" width="100%" src="imagens/2 Depilattas.png">
+                        </a>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12 subheadline-oferta">
+                    <h1>Conquiste uma pele e sobrancelhas incriveis sem precisar mais gastar com salão de beleza</h1>
+                    <img height="100%" width="100%" src="imagens/selos-csp.png" class="selos-cta img-fluid img-responsive">
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Oferta !-->
+        <div class="depoimentos">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="testimonialBox">
+                            <div class="content">
+                                <div class="imagem-pessoa">
+                                    <img loading="loazy" src="imagens/depoimento-02.webp">
+                                </div>
+                                <img class="img-depoimento" loading="loazy" src="imagens/Feedback 2.png">
+                            </div><!--content-->
+                        </div><!--testimonialBox-->
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <div class="testimonialBox">
+                            <div class="imagem-pessoa">
+                                <img loading="loazy" src="imagens/Depoimento-04.webp">
+                            </div>
+                            <div class="content">
+                                <img class="img-depoimento" loading="loazy" src="imagens/Feedback 4.png" alt="">
+                            </div><!--content-->
+                        </div><!--testimonialBox-->
+                    </div><!--swiper-slide-->
+                    <div class="swiper-slide">
+                        <div class="testimonialBox">
+                            <div class="imagem-pessoa">
+                                <img loading="loazy" src="imagens/depoimento-01.webp">
+                            </div>
+                            <div class="content">
+                                <img class="img-depoimento" loading="loazy" src="imagens/Feedback 1.png" alt="">
+                            </div><!--content-->
+                        </div><!--testimonialBox-->
+                    </div><!--swiper-slide-->
+                </div><!--swiper-wrapper-->
+            <div class="swiper-pagination"></div>
+        </div><!--swiper-->
+    </div><!--depoimentos-->
+    </div>
 
-    <footer class="footer">
+    <section class="garantia delay" id="garantia">
+        <div class="texto-garantia">
+            <p>E se você ainda tem dúvida sobre a segurança do seu pedido, nós temos 7 dias de garantia, caso ocorra qualquer problema com o seu Depilatta nós faremos a troca imediatamente sem custos pra você</p>
+        </div><!--texto-garantia-->
+        <div class="imagem-garantia">
+            <img width="395px" height="auto" loading="loazy" src="imagens/Selo de Garantia de 7 Dias PNG Transparente Sem Fundo.png" alt="">
+        </div><!--imagem-garantia-->
+    </section>
+
+    <footer class="footer delay">
         <div class="container">
             <div class="row">
                 <div class="direitos">
@@ -103,5 +177,59 @@
             </div><!--row-->
         </div><!--container-->
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper',{
+            loop: true,
+            effect: 'coverflow',
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        })
+    </script>
+
+    <script>
+    var divzona = document.getElementById("oferta-depoimentos")
+    var garantia = document.getElementById("garantia")
+    var flecha = document.getElementById("arrow")
+    const DELAY_TIME_IN_SECONDS = 137;
+    const DELAY_ELEMENTS_CLASS = 'delay';
+    
+    function showElements(className, value) {
+        for (const element of document.getElementsByClassName(className)) {
+            element.style.display = value;
+        }
+    }
+    
+    window.onload = () => {
+        showElements(DELAY_ELEMENTS_CLASS, 'none');
+        window.addEventListener("message", function(event) {
+          const data = event.data;
+          if (data.message == 'panda_timeupdate') {
+            if (data.currentTime >= DELAY_TIME_IN_SECONDS) {
+              showElements(DELAY_ELEMENTS_CLASS, 'block');
+              divzona.style.display = "flex"
+              divzona.style.flexDirection = "column"
+              flecha.style.backgroundColor = "rgb(179, 69, 118)"
+              garantia.style.display = "flex"
+            }
+          }
+        });
+    }
+    </script>
+    <!--
+    <script>
+        var url_atual = window.location.href;
+        var utm = url_atual.slice(url_atual.indexOf("?"),url_atual.length + 1)
+
+        var botao = document.querySelectorAll(".cta-potes")
+        for(var i = 0;i < botao.length; i++){
+            botao[i].href = botao[i].href + utm
+        }
+    </script>
+    -->
+
+
 </body>
 </html>
